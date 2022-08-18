@@ -9,19 +9,17 @@ function scuberGreetingForFeet(ride){
 }
   
 function ternaryCheckCity(city){
-  if(city === 'NYC'){
-    return 'Ok, sounds good.'
-  }else if(city === 'Pittsburgh'){
-    return 'No go.'
+ return  city === 'NYC'?'Ok, sounds good.': 'No go.'
   }
-}
+
 
 function switchOnCharmFromTip(tip){
- if(tip === 'generous'){
+ switch(tip){
+ case 'generous':
   return 'Thank you so much.'
- }else if(tip ==='not as generous'){
+ case 'not as generous':
   return 'Thank you.'
- }else{
+ case 'thanks for everything':
   return 'Bye.'
  }
 }
